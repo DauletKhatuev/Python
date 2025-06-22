@@ -45,3 +45,17 @@ for i in range(0, len(products)):
     print(next(a).lower())
 
 #3 задание
+from itertools import product
+
+clothes = ["T-shirt", "Jeans", "Jacket"]
+colors = ["Red", "Blue", "Black"]
+sizes = ["S", "M", "L"]
+
+combinations = product(clothes, colors, sizes) #Функция product вычисляет декартово произведение
+
+while True:
+    try:
+        clothe, color, size = next(combinations)
+        print(f"{clothe} - {color} - {size}")
+    except StopIteration:
+        break
