@@ -1,25 +1,25 @@
-Timestamp: 2025-11-15 12:32:47
+Timestamp: 2025-11-15 14:22:59
 === System information ===
-System   : Windows
-Node Name: MeinePC
-Release  : 10
-Version  : 10.0.26100
-Machine  : AMD64
-Processor: Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+System   : Linux
+Node Name: 82dcc41d13b6
+Release  : 6.6.87.2-microsoft-standard-WSL2
+Version  : #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025
+Machine  : x86_64
+Processor: 
 
 === CPU ===
-Physical cores  : 20
+Physical cores  : 14
 Total coress    : 28
-CPU usage (%)   : 3.2
+CPU usage (%)   : 1.0
 
 === Memory ===
-Total      : 31.8 GB
-Available  : 17.6 GB
-Used       : 14.1 GB
-Usage (%)  : 44.6%
+Total      : 15.5 GB
+Available  : 14.7 GB
+Used       : 639.4 MB
+Usage (%)  : 5.4%
 
 === Disk (/)===
-Total      : 952.8 GB
-Used       : 828.7 GB
-Free       : 124.1 GB
-Usage (%)  : 87.0 B%
+Total      : 1006.9 GB
+Used       : 3.0 GB
+Free       : 952.6 GB
+Usage (%)  : 0.3 B%

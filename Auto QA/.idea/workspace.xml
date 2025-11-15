@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e424a3d0-1a37-41a5-a347-fd7c4c3188a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Python/Praktikum and tasks/Leetcode/N1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Python/Python/Homework39.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW2/HW2.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2/HW2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Docker/HW3/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Docker/HW3/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
     &quot;Python.pr14.executor&quot;: &quot;Run&quot;,
     &quot;Python.pr15.executor&quot;: &quot;Run&quot;,
     &quot;Python.pr15_part_2.executor&quot;: &quot;Run&quot;,
