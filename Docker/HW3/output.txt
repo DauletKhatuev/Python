@@ -1,0 +1,25 @@
+Timestamp: 2025-11-15 12:32:47
+=== System information ===
+System   : Windows
+Node Name: MeinePC
+Release  : 10
+Version  : 10.0.26100
+Machine  : AMD64
+Processor: Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+
+=== CPU ===
+Physical cores  : 20
+Total coress    : 28
+CPU usage (%)   : 3.2
+
+=== Memory ===
+Total      : 31.8 GB
+Available  : 17.6 GB
+Used       : 14.1 GB
+Usage (%)  : 44.6%
+
+=== Disk (/)===
+Total      : 952.8 GB
+Used       : 828.7 GB
+Free       : 124.1 GB
+Usage (%)  : 87.0 B%

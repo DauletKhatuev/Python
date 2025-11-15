@@ -135,7 +135,7 @@ results = (
 
 
 print("\n___________________4___________________")
-for name, count in results:
+for name, counta in results:
     print(f"Категория: {name},  количество продуктов: {count}")
 
 
