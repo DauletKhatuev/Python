@@ -3,6 +3,7 @@ from sqlalchemy.orm import backref
 
 from HW5.community_pulse.app.models import db
 
+
 class Question(db.Model):
     __tablename__ = 'questions'
 
