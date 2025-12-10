@@ -2,15 +2,26 @@ from django.db import models
 
 
 class Category(models.Model):
-    """Категория выполнения задачи"""
+    """Категория выполнения задачи (дом, работа, учеба и т.п.)."""
     name = models.CharField(max_length=100, unique=True)
+
+    class Meta:
+        db_table = "task_manager_category"
+        verbose_name = "Category"
+        verbose_name_plural = "Categories"
+        constraints = [
+            models.UniqueConstraint(
+                fields=["name"],
+                name="unique_category_name",
+            )
+        ]
 
     def __str__(self) -> str:
         return self.name
 
 
 class Task(models.Model):
-    """Основная ззадача."""
+    """Основная задача."""
 
     class Status(models.TextChoices):
         NEW = "NEW", "New"
@@ -21,12 +32,11 @@ class Task(models.Model):
 
     title = models.CharField(
         max_length=200,
-        unique_for_date="deadline", #уникально для конкретной даты дедлайна
-        help_text="Название задачи (уникально для  даты дедлайна)",
+        unique=True,  # уникальность по title
+        help_text="Название задачи (уникально)",
     )
     description = models.TextField(blank=True)
 
-    #многие-ко-многим к Category
     categories = models.ManyToManyField(
         Category,
         related_name="tasks",
@@ -40,12 +50,28 @@ class Task(models.Model):
     )
 
     deadline = models.DateTimeField(
+        help_text="Дата и время дедлайна",
+    )
+
+    created_at = models.DateTimeField(
         auto_now_add=True,
         help_text="Дата и время создания",
     )
 
+    class Meta:
+        db_table = "task_manager_task"
+        ordering = ["-created_at"]        # сортировка по убыванию даты создания
+        verbose_name = "Task"
+        verbose_name_plural = "Tasks"
+        constraints = [
+            models.UniqueConstraint(
+                fields=["title"],
+                name="unique_task_title",
+            )
+        ]
+
     def __str__(self) -> str:
-        return f"{self.title} ({self.get_status_display()})"
+        return self.title
 
 
 class SubTask(models.Model):
@@ -58,14 +84,16 @@ class SubTask(models.Model):
         BLOCKED = "BLOCKED", "Blocked"
         DONE = "DONE", "Done"
 
-    title = models.CharField(max_length=200)
+    title = models.CharField(
+        max_length=200,
+        unique=True,  # уникальность по title
+    )
     description = models.TextField(blank=True)
 
-    # связь "один Task -> много SubTask"
     task = models.ForeignKey(
         Task,
         on_delete=models.CASCADE,
-        related_name="substasks",
+        related_name="subtasks",
     )
 
     status = models.CharField(
@@ -75,9 +103,25 @@ class SubTask(models.Model):
     )
 
     deadline = models.DateTimeField(
+        help_text="Дата и время дедлайна подзадачи",
+    )
+
+    created_at = models.DateTimeField(
         auto_now_add=True,
         help_text="Дата и время создания подзадачи",
     )
 
+    class Meta:
+        db_table = "task_manager_subtask"
+        ordering = ["-created_at"]       # сортировка по убыванию даты создания
+        verbose_name = "SubTask"
+        verbose_name_plural = "SubTasks"
+        constraints = [
+            models.UniqueConstraint(
+                fields=["title"],
+                name="unique_subtask_title",
+            )
+        ]
+
     def __str__(self) -> str:
-        return f"{self.title} -> {self.task.title}"
+        return self.title
