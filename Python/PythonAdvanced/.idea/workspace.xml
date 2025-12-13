@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fa6ba524-fdd1-4788-aade-68e59e56af29" name="Changes" comment="added HW7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW8/Tasks/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW8/Tasks/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW8/Tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW8/Tasks/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/HW8/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,21 +31,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Category.executor": "Run",
-    "Python.HW2.executor": "Run",
-    "Python.HW3.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.models.executor": "Run",
-    "Python.response.executor": "Run",
-    "Python.run.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Category.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+    &quot;Python.response.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vince\Desktop\ItCareerHub\Python\PythonAdvanced\HW5\community_pulse" />
